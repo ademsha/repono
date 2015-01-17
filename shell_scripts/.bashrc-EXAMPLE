@@ -1,0 +1,3 @@
+# Append this to ~/.bashrc file
+. ~/.bash_profile
+

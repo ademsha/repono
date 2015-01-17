@@ -1,0 +1,135 @@
+{
+  "amazon":{
+    "search_pattern":"I just bought via @amazon",
+    "extraction_patterns":{
+      "title":"I just bought: '(.*) via",
+      "url":".*?(amazon.com/dp/[0-9A-Za-z].*)\/",
+      "url_id":".*?/dp/([0-9A-Za-z]*)\/"
+    }
+  },
+  "youtube":{
+    "search_pattern":"I liked @YouTube",
+    "extraction_patterns":{
+      "title":".*t.co/ (.*)$",
+      "url":".*?(youtu.be/[0-9A-Za-z]*)",
+      "author":"from @(.*) http://"
+    }
+  },
+  "yelp-reviews":{
+    "search_pattern":"Review on #Yelp",
+    "extraction_patterns":{
+      "place":"(.*) on #Yelp:",
+      "url":".*?(yelp.com/.*)",
+      "review":"on #Yelp: (.*) http://"
+    }
+  },
+  "yelp-checkins":{
+    "search_pattern":"I checked in on #Yelp",
+    "extraction_patterns":{
+      "place":"I checked in at (.*) on #Yelp",
+      "url":".*?(yelp.com/.*)"
+    }
+  },
+  "vevo":{
+    "search_pattern":"I am watching on @Vevo",
+    "extraction_patterns":{
+      "title":"I am watching (.*) by",
+      "url":".*?(vevo.ly/[0-9A-Za-z]*)",
+      "author":"by (.*) on @VEVO",
+      "platform":"@VEVO for (.*) .*"
+    }
+  },
+  "tvshowtime":{
+    "search_pattern":"watched episode #tvshowtime",
+    "extraction_patterns":{
+      "title":"of (.*) on #tvshowtime",
+      "release_year":"\\((.*)\\)",
+      "episode":"episode (.*) of",
+      "url":".*?(tinyurl.com/[0-9A-Za-z]*)"
+    }
+  },
+  "spotify":{
+    "search_pattern":"I am listening to on Spotify #NowPlaying",
+    "extraction_patterns":{
+      "title":"(.*) http://",
+      "url":".*?(spoti.fi/[0-9A-Za-z]*)"
+    }
+  },
+  "pandora":{
+    "search_pattern":"I am listening to on #Pandora",
+    "extraction_patterns":{
+      "title":"I* listening to (.*) on",
+      "artist":"by (.*) on Pandora",
+      "url":"http://(.*)"
+    }
+  },
+  "nike":{
+    "search_pattern":"I just ran with Nike+",
+    "extraction_patterns":{
+      "pace":"@ a (.*) pace",
+      "length":"ran (.*?[0-9A-Za-z]) ",
+      "length_units":"[A-Za-z]?(mi|km)",
+      "url":".*?(go.nike.com/[0-9A-Za-z]*)"
+    }
+  },
+  "lastfm":{
+    "search_pattern":"I'm listening to via @lastfm",
+    "extraction_patterns":{
+      "title":"I’m listening to (.*) by",
+      "url":".*?(last.fm/[0-9A-Za-z].*)",
+      "artist":"by (.*) http://"
+    }
+  },
+  "imdb":{
+    "search_pattern":"I rated #IMDb",
+    "extraction_patterns":{
+      "title":"I rated (.*) \\(",
+      "release_year":"\\((.*)\\)",
+      "rating":"([0-9]+)/10",
+      "rating_max":".*/([0-9]+)",
+      "url":".*?(imdb.com/title/tt[0-9]*)",
+      "url_id":".*?/tt([0-9]*)/*"
+    }
+  },
+  "goodreads-readings":{
+    "search_pattern":"I read by goodreads.com",
+    "extraction_patterns":{
+      "title":"I read (.*) by",
+      "url":".*?(goodreads.com/[0-9A-Za-z].*)",
+      "author":"by (.*) http"
+    }
+  },
+  "goodreads-ratings":{
+    "search_pattern":"of 5 stars to by goodreads.com",
+    "extraction_patterns":{
+      "title":"stars to (.*) by",
+      "url":".*?(goodreads.com/[0-9A-Za-z].*)",
+      "author":"by (.*) http",
+      "rating":"^(.*) of",
+      "rating_max":"of (.*) stars"
+    }
+  },
+  "foursquare":{
+    "search_pattern":"I'm at 4sq.com",
+    "extraction_patterns":{
+      "place":"I'm at (.*) http://",
+      "url":".*?(4sq.com/[0-9A-Za-z]*)"
+    }
+  },
+  "fandango":{
+    "search_pattern":"I just rated @Fandango fandango.com",
+    "extraction_patterns":{
+      "title":"I just rated (.[A-Z]+)",
+      "rating":"([0-9]) out of",
+      "rating_max":"out of ([0-9]) stars",
+      "url":".*?(fandango.com/[0-9A-Za-z].*)"
+    }
+  },
+  "vimeo":{
+    "search_pattern":"I just liked on Vimeo",
+    "extraction_patterns":{
+      "title":"I just liked \"(.*)\" on Vimeo",
+      "url":".*?(vimeo.com/[0-9A-Za-z]*)"
+    }
+  }
+}

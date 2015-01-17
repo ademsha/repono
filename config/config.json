@@ -1,0 +1,70 @@
+{
+  "data_storage":{
+    "tinydb":{
+      "database_dir":"data/files/tinydb/",
+      "databases": {
+        "query_log": "query_log.json",
+        "process_log": "process_log.json",
+        "users": "users.json",
+        "amazon": "amazon.json",
+        "youtube": "youtube.json",
+        "vimeo": "vimeo.json",
+        "yelp-reviews": "yelp-reviews.json",
+        "yelp-checkins": "yelp-checkins.json",
+        "vevo": "vevo.json",
+        "tvshowtime": "tvshowtime.json",
+        "spotify": "spotify.json",
+        "pandora": "pandora.json",
+        "nike": "nike.json",
+        "lastfm": "lastfm.json",
+        "imdb": "imdb.json",
+        "goodreads-readings": "goodreads-readings.json",
+        "goodreads-ratings": "goodreads-ratings.json",
+        "foursquare": "foursquare.json",
+        "fandango": "fandango.json"
+      }
+    }
+  },
+  "queries": {
+    "twitter": {
+      "search_status_count": 100,
+      "collect_targets":{
+        "amazon":true,
+        "youtube":true,
+        "vimeo":true,
+        "yelp-reviews":true,
+        "yelp-checkins":true,
+        "vevo":true,
+        "tvshowtime":true,
+        "spotify":true,
+        "pandora":true,
+        "nike":true,
+        "lastfm":true,
+        "imdb":true,
+        "goodreads-readings":true,
+        "goodreads-ratings":true,
+        "foursquare":true,
+        "fandango":true
+      }
+    }
+  },
+  "export": {
+    "csv": {
+      "delimiter":",",
+      "quote_char":"\"",
+      "export_dir": "data/files/csv/"
+    }
+  },
+  "export": {
+    "csv": {
+      "delimiter":",",
+      "quote_char":"\"",
+      "export_dir": "data/files/csv/"
+    },
+    "compression": {
+      "compress_csv_naming_prefix":"repono_csv_",
+      "compress_db_naming_prefix":"repono_db_",
+      "export_dir": "data/files/compressed/"
+    }
+  }
+}

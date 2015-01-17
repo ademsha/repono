@@ -1,0 +1,10 @@
+Repono [BETA VERSION - STILL IN DEVELOPMENT!]
+
+Extract useful insights/datasets from Twitter data
+
+Currently supported sources: Amazon (Bought items), Fandango (Movie Ratings),
+Foursquare (Location Checkins), Goodreads (Book Ratings and Readings), IMDb (Movie Ratings),
+LastFM (Listening to music), Nike (Ran length), Pandora (Listening to music), Spotify (Listening to music),
+TV Show Time (Watching TV shows), Vevo (Watching videos),
+Yelp (Location Checkins and Reviews), YouTube (Liked videos)
+Vimeo (Watching videos)

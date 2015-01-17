@@ -1,0 +1,12 @@
+# m h  dom mon dow   command
+
+# COLLECT DATA - Every 10 minutes
+*/10 * * * * bash /PATH-TO-APP-LOCATION/repono/shell_scripts/collect.sh >> /PATH-TO-APP-LOCATION/repono/shell_scripts/collect.log 2>&1
+# EXPORT COLLECTED DATA TO CSV - Every hour
+0 * * * * bash /PATH-TO-APP-LOCATION/repono/shell_scripts/export-to-csv.sh >> /PATH-TO-APP-LOCATION/repono/shell_scripts/export-to-csv.log 2>&1
+# COMPRESS COLLECTED DATA (DB) - Every day at 22:30
+30 22 * * * bash /PATH-TO-APP-LOCATION/repono/shell_scripts/compress-db.sh >> /PATH-TO-APP-LOCATION/repono/shell_scripts/compress-db.log 2>&1
+# COMPRESS COLLECTED DATA (CSV) - Every day at 22:45
+45 22 * * * bash /PATH-TO-APP-LOCATION/repono/shell_scripts/compress-csv.sh >> /PATH-TO-APP-LOCATION/repono/shell_scripts/compress-csv.log 2>&1
+# EXPORT COMPRESSED DATA TO GIT REPO - Every day at 23:00
+0 23 * * * bash /PATH-TO-APP-LOCATION/repono/shell_scripts/export-compressed.sh >> /PATH-TO-APP-LOCATION/repono/shell_scripts/export-compressed.log 2>&1

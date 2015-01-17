@@ -1,0 +1,5 @@
+# Append this to ~/.bash_profile file
+# Use keychain to keep ssh-agent information available in a file
+/usr/bin/keychain $HOME/.ssh/NAME-OF-YOUR-KEY
+source $HOME/.keychain/$(hostname)-sh
+
