@@ -1,6 +1,4 @@
 # Repono [BETA!]
-=========
-
 Extract useful insights/datasets from Twitter data
 
 Currently supported sources: Amazon (Bought items), Fandango (Movie Ratings),
